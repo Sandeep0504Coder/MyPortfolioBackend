@@ -16,6 +16,10 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, "Phone Required!"],
   },
+  objective: {
+    type: String,
+    required: [true, "Objective Section Is Required!"],
+  },
   aboutMe: {
     type: String,
     required: [true, "About Me Section Is Required!"],
@@ -53,10 +57,10 @@ const userSchema = new mongoose.Schema({
   githubURL: {
     type: String,
   },
-  instagramURL: {
+  leetCodeURL: {
     type: String,
   },
-  twitterURL: {
+  hackerRankURL: {
     type: String,
   },
   linkedInURL: {
